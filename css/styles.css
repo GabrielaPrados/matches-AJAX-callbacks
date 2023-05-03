@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --darkPurple: hsl(300, 84%, 34%);
+    --mediumPurple: hsl(300, 43%, 65%);
+    --lightPurple: hsl(300, 23%, 78%);
+    --darkGrey: hsl(0, 1%, 47%);
+    --mediumGrey: hsl(0, 2%, 62%);
+    --lightGrey: hsl(0, 9%, 90%);
+    --transparentGrey: rgba(121, 119, 119, 0.5);
+    --mediumBlue: hsl(240, 88%, 67%);
+    --lightBlue: hsl(240, 88%, 90%);
+    --tranparentMediumGray: rgba(161, 157, 157, 0.3);
+    --black: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    min-height: 50px;
+}
+
+input {
+    padding: 10px;
+}
+
+main,
+header,
+#sectionIntegrantes,
+#mostrar,
+#mostrar div,
+#mostrar .formRadio,
+#divRadio,
+#seccionFormulario form,
+#seccionEjercicio,
+#seccionEjercicio article,
+#mostrarConsignas,
+#mostrarConsignas div,
+#seccionCantidadDatos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------------------COMUNES----------------------------------------------- */
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: var(--tranparentMediumGray);
+    margin: 0px auto;
+}
+
+header {
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    min-height: 10vh;
+    background-color: var(--darkPurple);
+    color: var(--lightGrey);
+    font-size: 2rem;
+}
+
+main {
+    height: auto;
+    min-height: 90vh;
+    max-width: 1200px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+/* --------------------------------------------SECCIONES----------------------------------------------- */
+
+#sectionIntegrantes,
+#mostrar,
+#seccionCantidadDatos {
+    width: 70%;
+    height: auto;
+    min-height: 50vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--lightPurple);
+}
+
+#sectionIntegrantes {
+    width: 100%;
+    min-width: 50%;
+    margin: 20px;
+}
+
+button {
+    width: 70%;
+    width: 100%;
+    max-width: 1110px;
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: var(--lightGrey);
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 0px;
+    border: none;
+    box-shadow: 0px 0px 5px 2px var(--black) inset;
+}
+
+#sectionIntegrantes div {
+    background-color: var(--lightBlue);
+    width: 40%;
+    margin: 50px;
+}
+
+#sectionIntegrantes h2 {
+    width: 350px;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 3px;
+    margin: 30px auto 0;
+    box-shadow: 3px 3px 5px var(--darkGrey);
+    background-color: var(--darkPurple);
+    color: var(--lightGrey);
+}
+
+#sectionIntegrantes dl {
+    margin: 30px;
+    margin-left: 30px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 150px 160%;
+    grid-template-areas:
+        "dt dd"
+        "dt dd"
+        "dt dd"
+        "dt dd"
+        "dt dd";
+}
+
+#sectionIntegrantes dt {
+    font-weight: bold;
+    grid-area: "dt";
+    margin-top: 20px ;
+}
+
+#sectionIntegrantes dt::after {
+    content: ":";
+}
+
+#sectionIntegrantes dd {
+    grid-area: "dd";
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+/* --------------------------------------- views --------------------------------------- */
+
+#divFinalizar h2,
+#divFinalizar h3 {
+    margin: 10px;
+}
+
+#mostrar {
+    flex-direction: column;
+}
+
+#mostrar div {
+    flex-direction: column;
+    height: 100%;
+}
+
+#mostrar div p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#mostrar select,
+#mostrar input {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#mostrar select {
+    padding-left: 10px;
+}
+
+#submit {
+    width: 30%;
+    height: 50px;
+    margin-top: 30%;
+}
+
+#mostrar .formRadio {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#mostrar .radio {
+    width: 20px;
+    margin: 0;
+    margin: 20px;
+}
+
+#mostrar .pConfirmar {
+    margin-bottom: 30px;
+}
+
+#mostrar #divRadio {
+    width: 50%;
+    flex-direction: row;
+}
+
+.imgOk{
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+#mostrar #submitConfirmar {
+    margin: 0 auto;
+}
+
+#seccionCantidadDatos {
+    font-size: min(0.5vw + 1.5rem);
+    justify-content: center;
+    flex-direction: column;
+}
+
+#seccionCantidadDatos p {
+    margin-bottom: 100px;
+}
+
+#seccionCantidadDatos input {
+    width: 300px;
+    height: 50px;
+}
+
+/* ----------------------------------clases ----------------------------------------------------- */
+.displayNone{
+    display: none;
+}
+
+/* ----------------------------------clases js----------------------------------------------------- */
+
+.visibility {
+    visibility: hidden;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

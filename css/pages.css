@@ -1,0 +1,152 @@
+/* ----------------------------------------clases----------------------------------------------- */
+
+.width100 {
+    width: 100%;
+    height: 100vh;
+}
+
+.displayFlexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ----------------------------------------Index----------------------------------------------- */
+#inicio {
+    background-color: var(--darkPurple);
+    color: var(--lightGrey);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#inicio img {
+    height: 40% ;
+    max-height: 500px;
+    min-width: 300px;
+    margin: 30px
+}
+
+#inicio h1 {
+    font-size: min(3vw + 2.5rem);
+    text-transform: uppercase;
+    margin: 1vw;
+}
+
+#inicio p {
+    font-size: min(2vw + 1.5rem);
+    margin-bottom: 30px;
+}
+
+#inicio a {
+    display: block;
+    width: 30%;
+    min-width: 350px;
+    height: 80px;
+    background-color: var(--lightPurple);
+    color: var(--darkGrey);
+    font-size: min(0.5vw + 1.5rem);
+    text-align: center;
+    line-height: 80px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+/* --------------------------------------   pagina formulario ----------------------------------------------- */
+
+#seccionFormulario {
+    width: 40%;
+    height: 80%;
+    background-color: var(--lightPurple);
+}
+
+#seccionFormulario form {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+#seccionFormulario form label,
+#seccionFormulario form input {
+    width: 60%;
+    min-width: 100px;
+}
+
+#seccionFormulario form label {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#seccionFormulario form input {
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#seccionFormulario form input[type="button"] {
+    cursor: pointer;
+}
+
+/* ---------------------------------------------- pagina ejercicios -------------------------------------- */
+
+#seccionEjercicio {
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 80px;
+}
+
+#seccionEjercicio article {
+    margin: 50px;
+    width: 300px;
+    min-width: 250px;
+    height: 300px;
+    background-color: var(--lightPurple);
+    color: var(--darkGrey);
+    box-shadow: 3px 3px 10px var(--darkGrey);
+    border-radius: 10px 10px 40px 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+#seccionEjercicio article span{
+    display: block;
+    font-weight: bolder;
+}
+
+#mostrarConsignas {
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--transparentGrey);
+    align-items: flex-start;
+}
+
+#mostrarConsignas div {
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    min-height: 50vh;
+    background-color: var(--lightBlue);
+    max-height: 70vh;
+    padding: 20px;
+}
+
+#mostrarConsignas div p{
+    width: 100%;
+    text-align: start;
+}
+
+#mostrarConsignas div button {
+    margin-bottom: 50px;
+}
